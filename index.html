@@ -9,6 +9,12 @@
       href="images/favicon-32x32.png"
       type="image/x-icon"
     />
+
+    <!-- animat css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -47,12 +53,12 @@
         </p>
         <div class="flex flex-col md:flex-row gap-6 text-xl justify-center">
           <button
-            class="bg-teal-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200"
+            class="bg-teal-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200 wow animate__animated animate__fadeInLeft"
           >
             Download for ios
           </button>
           <button
-            class="bg-indigo-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200"
+            class="bg-indigo-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200 wow animate__animated animate__fadeInRight"
           >
             Download for mac
           </button>
@@ -72,24 +78,28 @@
       <div
         class="flex flex-col lg:flex-row gap-20 pb-24 items-center justify-center"
       >
-        <img src="images/image-computer.png" alt="" class="mt-16 md:max-w-xl" />
+        <img
+          src="images/image-computer.png"
+          alt=""
+          class="mt-16 md:max-w-xl wow animate__animated animate__bounceInUp"
+        />
         <div
           class="flex flex-col md:flex-row lg:flex-col gap-10 lg:max-w-lg lg:text-left"
         >
-          <div>
+          <div class="wow animate__animated animate__bounceInRight">
             <h3 class="text-2xl font-bold text-gray-600">Quick Search</h3>
             <p class="text-xl">
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
           </div>
-          <div>
+          <div class="wow animate__animated animate__bounceInRight">
             <h3 class="text-2xl font-bold text-gray-600">iCloud Sync</h3>
             <p class="text-xl">
               Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
-          <div>
+          <div class="wow animate__animated animate__bounceInRight">
             <h3 class="text-2xl font-bold text-gray-600">Completely History</h3>
             <p class="text-xl">
               Retrieve any snippets from the first moment you started using the
@@ -108,7 +118,11 @@
         Whether you’re on the go, or at your computer, you can access all your
         Clipboard snippets in a few simple clicks.
       </p>
-      <img src="images/image-devices.png" alt="" class="mx-auto" />
+      <img
+        src="images/image-devices.png"
+        alt=""
+        class="mx-auto wow animate__animated animate__zoomInUp"
+      />
     </section>
 
     <section class="container mx-auto px-8 space-y-16">
@@ -162,12 +176,12 @@
       </p>
       <div class="flex flex-col md:flex-row gap-6 text-xl justify-center">
         <button
-          class="bg-teal-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200"
+          class="bg-teal-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200 wow animate__animated animate__fadeInLeft"
         >
           Download for ios
         </button>
         <button
-          class="bg-indigo-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200"
+          class="bg-indigo-500 py-4 px-6 rounded-full text-white hover:bg-opacity-80 shadow-xl transition-all duration-200 wow animate__animated animate__fadeInRight"
         >
           Download for mac
         </button>
@@ -193,5 +207,10 @@
         </ul>
       </div>
     </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
